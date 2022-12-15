@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Название вкладки -->
+		<title>Профориентация</title>
+
+		<!-- Кодировка документа -->
+		<meta charset="utf-8">
+
+		<!-- Подключение css из отдельного файла -->
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<!-- Подключение шрифтов -->
+		<link rel="stylesheet" type="text/css" href="./assets/fonts/montserrat.css">
+
+		<!-- Подключение js из отдельного файла -->
+		<script type="text/javascript" src="./script.js"></script>
+		
+	</head>
+	<body>
+		<!-- Тег для основного содержания документа -->
+		<main class="container">
+			<!-- Изображение -->
+			<img src="./assets/images/main.png" class="main_image">
+			<!-- Заголовок -->
+			<h1 class="title">Курсы Frontend разработки</h1>
+			<!-- Подзаголовок -->
+			<p class="subtitle">Верстка, проектирование</p>
+			<!-- Описание -->
+			<p class="description">Наша команда Shine Squad работает с 2019 года, активно участвует во всероссийских хакатонах, занимается коммерческой разработкой, созданием сайтов и веб-сервисов. Мы готовы поделиться своими знаниями в увлекательной форме и предлагаем пройти авторские курсы по подготовке Frontend специалистов.</p>
+
+			<div class="card-list">
+				<!-- Карточка 1 -->
+				<div class="card-list__item" data-tilt>
+					<div class="item-content">
+						<img src="./assets/images/card_1.png" class="item-content__image">
+						<p class="item-content__duration">2 месяца</p>
+						<p class="item-content__title">Вертска с нуля</p>
+					</div>
+					<button class="item__button" onclick="clickCard()">
+						<span>Записаться</span>
+					</button>
+				</div>
+				<!-- Карточка 2 -->
+				<div class="card-list__item" data-tilt>
+					<div class="item-content">
+						<img src="./assets/images/card_1.png" class="item-content__image">
+						<p class="item-content__duration">4 месяца</p>
+						<p class="item-content__title">Проектирование сервисов</p>
+					</div>
+					<button class="item__button" onclick="clickCard()">
+						<span>Записаться</span>
+					</button>
+				</div>
+				<!-- Карточка 3 -->
+				<div class="card-list__item" data-tilt>
+					<div class="item-content">
+						<img src="./assets/images/card_1.png" class="item-content__image">
+						<p class="item-content__duration">10 месяцев</p>
+						<p class="item-content__title">Frontend для продвинутых</p>
+					</div>
+					<button class="item__button" onclick="clickCard()">
+						<span>Записаться</span>
+					</button>
+				</div>
+			</div>
+		</main>
+	</body>
+	<!-- Подключение библиотеки -->
+	<script type="text/javascript" src="./assets/libs/vanilla-tilt.js"></script>
+</html>
+
+<!-- css внутри html -->
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: Montserrat, sans-serif;
+	}
+	body {
+		background: #F5F5F5;
+	}
+</style>
+<!-- js внутри html -->
+<script type="text/javascript">
+	console.log("Запускаюсь из html файла")
+
+	function clickCard() {
+		alert("Привет")
+	}
+</script>
